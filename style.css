@@ -1,0 +1,87 @@
+body{
+    background-color: #2C363F;
+}
+
+.title-txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: #C9F0FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.todo-input{
+    flex: 1;
+    background-color: #2C363F;
+    border-color: #C9F0FF;
+    border-style: solid;
+    color: #C9F0FF;
+    font-size: 24px;
+}
+
+.todo-input-date{
+    flex: 1;
+    margin-left: 20px;
+    background-color: #2C363F;
+    border-color: #C9F0FF;
+    border-style: solid;
+    padding: 10px;
+    color: #C9F0FF;
+    font-size: 24px;
+}
+
+.todo-input-date::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.add-btn{
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    border: none;
+    background-color: #D90429;
+    color: #C9F0FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+
+.remove-btn{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    border: none;
+    font-size: 30px;
+    background-color: #2C363F;
+    color: #D90429;
+
+}
+
+.add-btn:hover{
+    background-color: #D90429;
+    color: #C9F0FF;
+}
+
+.todoList{
+    color: #C9F0FF;
+    align-items: center;
+    font-size: 24px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-text{
+    flex: 1;
+}
+
+.todo-date{
+    flex: 1;
+}
+
+.remove-btn:hover{
+    color: #C9F0FF;
+}
