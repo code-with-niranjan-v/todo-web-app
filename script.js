@@ -5,15 +5,20 @@ let todoInput = document.querySelector('.todo-input');
 let todoInputDate = document.querySelector('.todo-input-date');
 function addTodo(){
     todoListContainer.innerHTML ='';
-    const todo = {
-        todo: todoInput.value,
-        date: todoInputDate.value
-    };
-    todoInput.value = '';
-    todoInputDate.value = '';
-    todoList.push(todo);
-    render();
-    console.log(todoList);
+    if(todoInput.value ==='' || todoInputDate.value===''){
+        alert('Enter all the fields');
+    }else{
+        const todo = {
+            todo: todoInput.value,
+            date: todoInputDate.value
+        };
+        todoInput.value = '';
+        todoInputDate.value = '';
+        todoList.push(todo);
+        render();
+        console.log(todoList);
+    }
+    
 
 }
 
